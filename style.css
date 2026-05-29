@@ -495,6 +495,78 @@ footer {
     color: #4d7a6a;
 }
 
+.menu > li.umkm:hover > .dropdown {
+  display: block;
+}
+
+.has-sub:hover > .sub-dropdown {
+  display: block;
+}
+
+/* Dropdown UMKM */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  min-width: 140px;
+  list-style: none;
+  padding: 4px 0;
+  z-index: 100;
+}
+
+.umkm:hover > .dropdown {
+  display: block;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 8px 14px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown li a:hover {
+  background: #f5f5f5;
+}
+
+/* Sub-dropdown UMKM 3 */
+.has-sub {
+  position: relative;
+}
+
+.sub-dropdown {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  min-width: 140px;
+  list-style: none;
+  padding: 4px 0;
+  z-index: 101;
+}
+
+.has-sub:hover > .sub-dropdown {
+  display: block;
+}
+
 
 /* ================= RESPONSIVE ================= */
 
