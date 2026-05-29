@@ -498,7 +498,70 @@ footer {
 
 /* ================= RESPONSIVE ================= */
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .menu a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    /* Home section */
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0;
+        min-height: unset;
+    }
+
+    .tagline {
+        width: 100%;
+    }
+
+    .tagline h2 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .slogan {
+        font-size: 14px;
+    }
+
+    .home img {
+        width: 100%;
+    }
+
+    /* Profil section */
+    .profil {
+        padding: 60px 20px;
+    }
+
+    .desa-profil {
+        width: 100%;
+    }
+
+    .judul h2 {
+        font-size: 32px;
+    }
+
+    .visi-misi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+    
     .section-map {
         padding: 60px 20px;
     }
